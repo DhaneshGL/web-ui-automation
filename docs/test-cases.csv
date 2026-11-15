@@ -1,0 +1,7 @@
+Test Case ID,Requirement,Title,Preconditions,Steps,Expected Result,Priority,Test Type,Automation
+UI-001,REQ-01,Display seeded catalog,Open local storefront,"Load the page",Four named products and prices are visible,High,Smoke and UI,Automated
+UI-002,REQ-02,Filter products by search,Open local storefront,"Search bottle; then search for a non-match",One matching item is shown; no-match message is clear,Medium,Functional and negative,Automated
+UI-003,REQ-03,Update quantity for repeated item,Open local storefront,"Add Everyday Bottle twice",Quantity is 2 and total is $56.00,High,Functional regression,Automated
+UI-004,REQ-03,Sum multiple cart items,Open local storefront,"Add Everyday Bottle and Cedar Hand Soap",Quantity is 2 and total is $40.00,High,Functional integration,Automated
+UI-005,REQ-04,Submit valid demo checkout,Open local storefront,"Add Market Tote; enter valid name/email; submit",Confirmation is displayed and cart is cleared,High,Functional,Automated
+UI-006,REQ-04,Block checkout without customer details,Open local storefront,"Add Morning Mug; submit empty form",Required-field validation blocks submit and cart remains intact,High,Negative sanity,Automated

@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Northstar Supply | QA Demo Storefront</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="Northstar Supply home">NORTHSTAR<span>SUPPLY</span></a>
+    <nav aria-label="Main navigation"><a href="#catalog">Shop</a><a href="#about">Our promise</a></nav>
+    <a class="cart-link" href="#cart" aria-label="Shopping cart">
+      Bag <span id="cart-count" data-testid="cart-count">0</span>
+    </a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div>
+        <p class="eyebrow">EVERYDAY GOODS, THOUGHTFULLY MADE</p>
+        <h1>Small upgrades.<br>Better everyday.</h1>
+        <p>Useful essentials with a lighter footprint.</p>
+        <a class="button button-dark" href="#catalog">Explore the collection</a>
+      </div>
+      <div class="hero-art" aria-label="Illustration of a green travel bottle" role="img">
+        <span class="sun"></span><span class="bottle"></span><span class="plant">✳</span>
+      </div>
+    </section>
+
+    <section class="catalog" id="catalog">
+      <div class="section-heading">
+        <div><p class="eyebrow">THE GOOD STUFF</p><h2>Customer favorites</h2></div>
+        <label class="search-label" for="search">Find an item
+          <input id="search" data-testid="product-search" type="search" placeholder="Try “bottle”">
+        </label>
+      </div>
+      <p class="notice" id="notice" role="status" aria-live="polite"></p>
+      <div class="product-grid" id="product-grid" data-testid="product-grid"></div>
+    </section>
+
+    <section class="cart-panel" id="cart" aria-labelledby="cart-title">
+      <div class="section-heading">
+        <div><p class="eyebrow">READY WHEN YOU ARE</p><h2 id="cart-title">Your bag</h2></div>
+        <p class="cart-total">Total <strong id="cart-total" data-testid="cart-total">$0.00</strong></p>
+      </div>
+      <p id="cart-empty">Your bag is waiting for something good.</p>
+      <ul id="cart-items" data-testid="cart-items"></ul>
+      <form id="checkout-form">
+        <label for="customer-name">Name</label>
+        <input id="customer-name" name="name" autocomplete="name" required>
+        <label for="customer-email">Email</label>
+        <input id="customer-email" name="email" type="email" autocomplete="email" required>
+        <button class="button button-dark" id="checkout-button" type="submit">Place demo order</button>
+      </form>
+      <p class="notice" id="checkout-message" role="status" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <footer id="about"><span>NORTHSTAR SUPPLY</span><span>A local demo storefront for QA practice · No real purchases</span></footer>
+  <script src="storefront.js"></script>
+</body>
+</html>

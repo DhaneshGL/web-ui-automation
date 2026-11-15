@@ -1,0 +1,5 @@
+Requirement ID,Requirement,Test Case IDs,Coverage
+REQ-01,Display available catalog items with correct price,UI-001,Automated
+REQ-02,Allow product search and communicate no matches,UI-002,Automated
+REQ-03,Keep cart quantities and totals accurate,UI-003; UI-004,Automated
+REQ-04,Validate checkout details and confirm valid demo orders,UI-005; UI-006,Automated

@@ -1,0 +1,8 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Storefront UI Regression Suite" verbose="1">
+    <test name="Storefront functional tests">
+        <classes>
+            <class name="portfolio.qa.ui.StorefrontTest"/>
+        </classes>
+    </test>
+</suite>
